@@ -1,0 +1,4 @@
+numpy
+lxml
+python-Levenshtein
+scipy
