@@ -85,15 +85,16 @@ We evaluated providers across document AI vendors, foundation models, and open-s
 | 5 | LlamaParse (Agentic) | 0.8396 | 96.4% |
 | 6 | **Pulse Ultra 2** | **0.8290** | 97.2% |
 | 7 | Extend 2.0 | 0.8244 | 93.1% |
-| 8 | Reducto r-1 | 0.8139 | 94.6% |
-| 9 | Reducto (Agentic) | 0.8133 | 94.8% |
-| 10 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
-| 11 | Datalab | 0.7774 | 91.2% |
-| 12 | Azure Document Intelligence | 0.7614 | 92.0% |
-| 13 | Extend (Lite) | 0.7547 | 92.7% |
-| 14 | Reducto | 0.7115 | 94.8% |
-| 15 | AWS Textract | 0.6034 | 98.5% |
-| 16 | Unstructured | 0.3603 | 100.0% |
+| 8 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% |
+| 9 | Reducto r-1 | 0.8139 | 94.6% |
+| 10 | Reducto (Agentic) | 0.8133 | 94.8% |
+| 11 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
+| 12 | Datalab | 0.7774 | 91.2% |
+| 13 | Azure Document Intelligence | 0.7614 | 92.0% |
+| 14 | Extend (Lite) | 0.7547 | 92.7% |
+| 15 | Reducto | 0.7115 | 94.8% |
+| 16 | AWS Textract | 0.6034 | 98.5% |
+| 17 | Unstructured | 0.3603 | 100.0% |
 
 Scoring mode: exclude-missing. Providers are scored only on samples where they produced output.
 
