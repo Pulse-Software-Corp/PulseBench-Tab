@@ -139,10 +139,17 @@ print(result["precision"])  # 1.0
 print(result["recall"])     # 1.0
 ```
 
+### Run a provider yourself
+
+`providers/` holds the adapter scripts behind the leaderboard rows (Reducto, LlamaParse, Extend, Anthropic,
+OpenAI, Google, Pulse) plus a small runner. See [providers/README.md](providers/README.md) for how to run one,
+the rules a submission must follow, and how to add a new provider.
+
 ## Repository Structure
 
 ```
 tlag_scorer.py           # T-LAG scoring implementation
+providers/               # provider adapters + runner used for the leaderboard runs
 requirements.txt         # Python dependencies
 LICENSE                  # CC BY-NC-ND 4.0
 ```
