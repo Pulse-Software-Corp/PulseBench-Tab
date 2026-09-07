@@ -83,7 +83,7 @@ We evaluated providers across document AI vendors, foundation models, and open-s
 | 3 | Gemini 3.8 Flash | 0.8857 | 99.9% |
 | 4 | GPT-6 Astra | 0.8852 | 99.6% |
 | 5 | GPT-5.6 Sol | 0.8808 | 99.0% |
-| 6 | Mistral OCR 4.1 | 0.8581 | 95.5% |
+| 6 | Mistral OCR 4.1 | 0.8569 | 97.5% |
 | 7 | LlamaParse (Agentic) | 0.8396 | 96.4% |
 | 8 | Extend 2.0 | 0.8244 | 93.1% |
 | 9 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% |
