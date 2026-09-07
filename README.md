@@ -78,23 +78,24 @@ We evaluated providers across document AI vendors, foundation models, and open-s
 
 | Rank | Provider | T-LAG Score | Coverage |
 |------|----------|------------|----------|
-| 1 | Claude Fable 5.1 | 0.8904 | 99.3% |
-| 2 | Gemini 3.8 Flash | 0.8857 | 99.9% |
-| 3 | GPT-6 Astra | 0.8852 | 99.6% |
-| 4 | GPT-5.6 Sol | 0.8808 | 99.0% |
-| 5 | LlamaParse (Agentic) | 0.8396 | 96.4% |
-| 6 | **Pulse Ultra 2** | **0.8290** | 97.2% |
-| 7 | Extend 2.0 | 0.8244 | 93.1% |
-| 8 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% |
-| 9 | Reducto r-1 | 0.8139 | 94.6% |
-| 10 | Reducto (Agentic) | 0.8133 | 94.8% |
-| 11 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
-| 12 | Datalab | 0.7774 | 91.2% |
-| 13 | Azure Document Intelligence | 0.7614 | 92.0% |
-| 14 | Extend (Lite) | 0.7547 | 92.7% |
-| 15 | Reducto | 0.7115 | 94.8% |
-| 16 | AWS Textract | 0.6034 | 98.5% |
-| 17 | Unstructured | 0.3603 | 100.0% |
+| 1 | **Pulse Ultra 2** | **0.9347** | 100.0% |
+| 2 | Claude Fable 5.1 | 0.8904 | 99.3% |
+| 3 | Gemini 3.8 Flash | 0.8857 | 99.9% |
+| 4 | GPT-6 Astra | 0.8852 | 99.6% |
+| 5 | GPT-5.6 Sol | 0.8808 | 99.0% |
+| 6 | Mistral OCR 4.1 | 0.8581 | 95.5% |
+| 7 | LlamaParse (Agentic) | 0.8396 | 96.4% |
+| 8 | Extend 2.0 | 0.8244 | 93.1% |
+| 9 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% |
+| 10 | Reducto r-1 | 0.8139 | 94.6% |
+| 11 | Reducto (Agentic) | 0.8133 | 94.8% |
+| 12 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
+| 13 | Datalab | 0.7774 | 91.2% |
+| 14 | Azure Document Intelligence | 0.7614 | 92.0% |
+| 15 | Extend (Lite) | 0.7547 | 92.7% |
+| 16 | Reducto | 0.7115 | 94.8% |
+| 17 | AWS Textract | 0.6034 | 98.5% |
+| 18 | Unstructured | 0.3603 | 100.0% |
 
 Scoring mode: exclude-missing. Providers are scored only on samples where they produced output.
 
