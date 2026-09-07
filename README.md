@@ -82,17 +82,18 @@ We evaluated providers across document AI vendors, foundation models, and open-s
 | 2 | Gemini 3.8 Flash | 0.8857 | 99.9% |
 | 3 | GPT-6 Astra | 0.8852 | 99.6% |
 | 4 | GPT-5.6 Sol | 0.8808 | 99.0% |
-| 5 | **Pulse Ultra 2** | **0.8290** | 97.2% |
-| 6 | Extend 2.0 | 0.8244 | 93.1% |
-| 7 | Reducto r-1 | 0.8139 | 94.6% |
-| 8 | Reducto (Agentic) | 0.8133 | 94.8% |
-| 9 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
-| 10 | Datalab | 0.7774 | 91.2% |
-| 11 | Azure Document Intelligence | 0.7614 | 92.0% |
-| 12 | Extend (Lite) | 0.7547 | 92.7% |
-| 13 | Reducto | 0.7115 | 94.8% |
-| 14 | AWS Textract | 0.6034 | 98.5% |
-| 15 | Unstructured | 0.3603 | 100.0% |
+| 5 | LlamaParse (Agentic) | 0.8396 | 96.4% |
+| 6 | **Pulse Ultra 2** | **0.8290** | 97.2% |
+| 7 | Extend 2.0 | 0.8244 | 93.1% |
+| 8 | Reducto r-1 | 0.8139 | 94.6% |
+| 9 | Reducto (Agentic) | 0.8133 | 94.8% |
+| 10 | LlamaParse (Cost Effective) | 0.7789 | 96.0% |
+| 11 | Datalab | 0.7774 | 91.2% |
+| 12 | Azure Document Intelligence | 0.7614 | 92.0% |
+| 13 | Extend (Lite) | 0.7547 | 92.7% |
+| 14 | Reducto | 0.7115 | 94.8% |
+| 15 | AWS Textract | 0.6034 | 98.5% |
+| 16 | Unstructured | 0.3603 | 100.0% |
 
 Scoring mode: exclude-missing. Providers are scored only on samples where they produced output.
 
