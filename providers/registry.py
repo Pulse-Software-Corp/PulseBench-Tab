@@ -37,11 +37,6 @@ PROVIDERS: dict[str, dict] = {
                     "config": {"model": "gpt-5.6-sol", "reasoning_effort": "max", "detail": "original"}, "concurrency": 16},
     "gemini_3_8_flash": {"display_name": "Gemini 3.8 Flash", "adapter": "providers.vlm:GeminiProvider",
                          "config": {"model": "gemini-3.8-flash", "thinking_level": "high", "media_resolution": "MEDIA_RESOLUTION_ULTRA_HIGH"}, "concurrency": 16},
-    # Pulse (https://docs.runpulse.com): model pulse-ultra-2; `refine` / `refine_options` are the documented flags.
-    "pulse_ultra2": {"display_name": "Pulse Ultra 2", "adapter": "providers.pulse:PulseProvider",
-                     "config": {"refine": False}, "concurrency": 32},
-    "pulse_ultra2_refine": {"display_name": "Pulse Ultra 2 (refine)", "adapter": "providers.pulse:PulseProvider",
-                            "config": {"refine": True}, "concurrency": 32},
 }
 
 
