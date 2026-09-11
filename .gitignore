@@ -1,0 +1,4 @@
+data/
+predictions/*/raw/
+__pycache__/
+.env

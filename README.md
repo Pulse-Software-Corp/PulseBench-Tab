@@ -74,21 +74,54 @@ For the full mathematical specification, see the research paper.
 
 ## Evaluated Providers
 
-We evaluated 9 providers across document AI vendors, foundation models, and open-source tools on all 1,820 samples.
+We evaluated providers across document AI vendors, foundation models, and open-source tools on all 1,820 samples. Rows dated September 2026 were re-run with the scripts in `providers/`; the remaining rows are from the April 2026 run.
 
-| Rank | Provider | T-LAG Score | Coverage |
-|------|----------|------------|----------|
-| 1 | **Pulse Ultra 2** | **0.9347** | 100.0% |
-| 2 | Gemini 3.1 | 0.8155 | 99.5% |
-| 3 | LlamaParse (Agentic) | 0.7977 | 94.0% |
-| 4 | Reducto (Agentic) | 0.7953 | 78.8% |
-| 5 | Extend | 0.7626 | 91.9% |
-| 6 | Azure Document Intelligence | 0.7614 | 92.0% |
-| 7 | Reducto | 0.7175 | 80.4% |
-| 8 | AWS Textract | 0.6034 | 98.5% |
-| 9 | Unstructured | 0.3603 | 100.0% |
+| Rank | Provider | T-LAG Score | Coverage | Perfect | Run |
+|------|----------|------------|----------|---------|-----|
+| 1 | **Pulse Ultra 2** | **0.9347** | 100.0% | 1054 | 2026-04 |
+| 2 | Claude Fable 5.1 | 0.8904 | 99.3% | 617 | 2026-09 |
+| 3 | Gemini 3.8 Flash | 0.8857 | 99.9% | 621 | 2026-09 |
+| 4 | GPT-6 Astra | 0.8852 | 99.6% | 572 | 2026-09 |
+| 5 | GPT-5.6 Sol | 0.8808 | 99.0% | 532 | 2026-09 |
+| 6 | Mistral OCR 4.1 | 0.8569 | 97.5% | 555 | 2026-09 |
+| 7 | LlamaParse (Agentic) | 0.8396 | 96.4% | 410 | 2026-09 |
+| 8 | Extend 2.0 | 0.8244 | 93.1% | 370 | 2026-09 |
+| 9 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% | 486 | 2026-09 |
+| 10 | Reducto r-1 | 0.8139 | 94.6% | 394 | 2026-09 |
+| 11 | Reducto (Agentic) | 0.8133 | 94.8% | 394 | 2026-09 |
+| 12 | LlamaParse (Cost Effective) | 0.7789 | 96.0% | 302 | 2026-09 |
+| 13 | Datalab | 0.7774 | 91.2% | 317 | 2026-04 |
+| 14 | Azure Document Intelligence | 0.7614 | 92.0% | 211 | 2026-04 |
+| 15 | Extend (Lite) | 0.7547 | 92.7% | 302 | 2026-09 |
+| 16 | Reducto | 0.7115 | 94.8% | 193 | 2026-09 |
+| 17 | AWS Textract | 0.6034 | 98.5% | 163 | 2026-04 |
+| 18 | Unstructured | 0.3603 | 100.0% | 39 | 2026-04 |
 
 Scoring mode: exclude-missing. Providers are scored only on samples where they produced output.
+
+## Languages
+
+| Language | Samples | Share |
+|---|---|---|
+| English | 589 | 32.4% |
+| Chinese | 213 | 11.7% |
+| Spanish | 176 | 9.7% |
+| Russian | 170 | 9.3% |
+| French | 165 | 9.1% |
+| Japanese | 164 | 9.0% |
+| Arabic | 146 | 8.0% |
+| German | 113 | 6.2% |
+| Korean | 84 | 4.6% |
+
+## Dataset changelog
+
+### v2 (2026-09-10)
+- Language labels re-verified against every ground-truth table (script analysis + statistical detection + manual review of every disagreement); 5 labels corrected (japanese_0031, japanese_0078, japanese_0124, japanese_0279, japanese_0298: english → japanese, bilingual tables with Japanese headers).
+- 160 sample ids renamed so the id prefix matches the verified language (`legacy_sample_id` keeps the original id; `source_collection` keeps the original collection tag such as `english_sec`, `greek_historical`).
+- Ground-truth files now carry `<html lang="xx">` and `legacy-sample-id` / `language` meta tags.
+- Results layout unified to `results/<provider>/<language>/<sample_id>.html` for every provider.
+- September 2026 reruns added: Reducto, Reducto r-1, Reducto (Agentic), LlamaParse (Cost Effective), LlamaParse (Agentic), LlamaParse (Agentic Plus), Extend 2.0, Extend (Lite), Claude Fable 5.1, Gemini 3.8 Flash, GPT-6 Astra, GPT-5.6 Sol, Mistral OCR 4.1; superseded April rows kept in the scores file as unpublished history.
+- Known data-quality flag: `chinese_0282` (legacy arabic_0416) ground truth contains placeholder boxes for some Chinese characters.
 
 ## Usage
 
@@ -139,10 +172,17 @@ print(result["precision"])  # 1.0
 print(result["recall"])     # 1.0
 ```
 
+### Run a provider yourself
+
+`providers/` holds the adapter scripts behind the leaderboard rows (Reducto, LlamaParse, Extend, Anthropic,
+OpenAI, Google, Pulse) plus a small runner. See [providers/README.md](providers/README.md) for how to run one,
+the rules a submission must follow, and how to add a new provider.
+
 ## Repository Structure
 
 ```
 tlag_scorer.py           # T-LAG scoring implementation
+providers/               # provider adapters + runner used for the leaderboard runs
 requirements.txt         # Python dependencies
 LICENSE                  # CC BY-NC-ND 4.0
 ```

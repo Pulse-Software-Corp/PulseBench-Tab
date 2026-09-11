@@ -1,0 +1,8 @@
+datasets
+pillow
+aiohttp
+httpx
+anthropic>=1.4
+openai>=3.8
+google-genai>=2.22
+extend-ai>=1.19
