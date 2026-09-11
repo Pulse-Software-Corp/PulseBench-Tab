@@ -78,24 +78,24 @@ We evaluated providers across document AI vendors, foundation models, and open-s
 
 | Rank | Provider | T-LAG Score | Coverage | Perfect | Run |
 |------|----------|------------|----------|---------|-----|
-| 1 | **Pulse Ultra 2** | **0.9347** | 100.0% | 1054 | 2026-04 |
-| 2 | Claude Fable 5.1 | 0.8904 | 99.3% | 617 | 2026-09 |
-| 3 | Gemini 3.8 Flash | 0.8857 | 99.9% | 621 | 2026-09 |
-| 4 | GPT-6 Astra | 0.8852 | 99.6% | 572 | 2026-09 |
-| 5 | GPT-5.6 Sol | 0.8808 | 99.0% | 532 | 2026-09 |
-| 6 | Mistral OCR 4.1 | 0.8569 | 97.5% | 555 | 2026-09 |
-| 7 | LlamaParse (Agentic) | 0.8396 | 96.4% | 410 | 2026-09 |
-| 8 | Extend 2.0 | 0.8244 | 93.1% | 370 | 2026-09 |
-| 9 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% | 486 | 2026-09 |
-| 10 | Reducto r-1 | 0.8139 | 94.6% | 394 | 2026-09 |
+| 1 | **Pulse Ultra 2** | **0.9347** | 100.0% | 1053 | 2026-04 |
+| 2 | Claude Fable 5.1 | 0.8904 | 99.3% | 616 | 2026-09 |
+| 3 | Gemini 3.8 Flash | 0.8857 | 99.9% | 619 | 2026-09 |
+| 4 | GPT-6 Astra | 0.8852 | 99.6% | 571 | 2026-09 |
+| 5 | GPT-5.6 Sol | 0.8808 | 99.0% | 531 | 2026-09 |
+| 6 | Mistral OCR 4.1 | 0.8569 | 97.5% | 553 | 2026-09 |
+| 7 | LlamaParse (Agentic) | 0.8396 | 96.4% | 407 | 2026-09 |
+| 8 | Extend 2.0 | 0.8244 | 93.1% | 369 | 2026-09 |
+| 9 | LlamaParse (Agentic Plus) | 0.8207 | 98.3% | 484 | 2026-09 |
+| 10 | Reducto r-1 | 0.8139 | 94.6% | 393 | 2026-09 |
 | 11 | Reducto (Agentic) | 0.8133 | 94.8% | 394 | 2026-09 |
-| 12 | LlamaParse (Cost Effective) | 0.7789 | 96.0% | 302 | 2026-09 |
-| 13 | Datalab | 0.7774 | 91.2% | 317 | 2026-04 |
+| 12 | LlamaParse (Cost Effective) | 0.7789 | 96.0% | 301 | 2026-09 |
+| 13 | Datalab | 0.7774 | 91.2% | 316 | 2026-04 |
 | 14 | Azure Document Intelligence | 0.7614 | 92.0% | 211 | 2026-04 |
-| 15 | Extend (Lite) | 0.7547 | 92.7% | 302 | 2026-09 |
+| 15 | Extend (Lite) | 0.7547 | 92.7% | 300 | 2026-09 |
 | 16 | Reducto | 0.7115 | 94.8% | 193 | 2026-09 |
-| 17 | AWS Textract | 0.6034 | 98.5% | 163 | 2026-04 |
-| 18 | Unstructured | 0.3603 | 100.0% | 39 | 2026-04 |
+| 17 | Snowflake Document AI | 0.7078 | 96.0% | 267 | 2026-04 |
+| 18 | Databricks Document AI | 0.6297 | 99.7% | 205 | 2026-04 |
 
 Scoring mode: exclude-missing. Providers are scored only on samples where they produced output.
 
