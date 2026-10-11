@@ -5,7 +5,7 @@
 PulseBench-Tab evaluates how accurately document parsing systems reproduce both the structure (rows, columns, spans) and content (cell text) of tables. The benchmark contains 1,820 human-annotated tables across 9 languages, scored using T-LAG, a novel graph-based evaluation metric.
 
 - **Dataset (HuggingFace):** `https://huggingface.co/datasets/pulse-ai/PulseBench-Tab`
-- **Research paper (arXiv):** `https://benchmark.runpulse.com/research-report`
+- **Research paper (arXiv):** `https://arxiv.org/abs/2606.07534`
 - **Blog post:** `https://runpulse.com/blog/pulsebench-tab`
 
 ## T-LAG Scoring Methodology
