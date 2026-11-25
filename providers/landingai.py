@@ -27,7 +27,7 @@ BASE = "https://api.ade.landing.ai"
 
 class LandingAIProvider(Provider):
     async def start(self) -> None:
-        key = os.environ["VISION_AGENT_API_KEY"]
+        key = os.environ["ADE_API_KEY"]
         self._headers = {"Authorization": f"Bearer {key}"}
         self._session = aiohttp.ClientSession(connector=aiohttp.TCPConnector(limit=0),
                                               timeout=aiohttp.ClientTimeout(total=300, connect=60))
