@@ -5,7 +5,7 @@
   python -m providers.run status
 
 API keys are read from the environment: REDUCTO_API_KEY, LLAMA_CLOUD_API_KEY, EXTEND_API_KEY,
-ANTHROPIC_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY.
+ANTHROPIC_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY, VISION_AGENT_API_KEY.
 """
 from __future__ import annotations
 

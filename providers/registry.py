@@ -28,6 +28,10 @@ PROVIDERS: dict[str, dict] = {
                  "config": {"engine": "parse_performance", "engine_version": "2.0.0"}, "concurrency": 6},
     "extend_lite": {"display_name": "Extend (Lite)", "adapter": "providers.extend:ExtendProvider",
                     "config": {"engine": "parse_light", "engine_version": "1.0.0"}, "concurrency": 6},
+    # LandingAI ADE Parse: DPT-3 Pro, dated snapshot from the 2026-11-11 release, documented default options.
+    "landingai_dpt3_pro": {"display_name": "LandingAI ADE (DPT-3 Pro)", "adapter": "providers.landingai:LandingAIProvider",
+                           "config": {"model": "dpt-3-pro-20261111", "service_tier": "standard", "prediction": "tables"},
+                           "concurrency": 16},
     # Frontier VLMs, one shared prompt (providers/vlm.py), each vendor's maximum reasoning setting.
     "claude_fable_5_1": {"display_name": "Claude Fable 5.1", "adapter": "providers.vlm:AnthropicProvider",
                          "config": {"model": "claude-fable-5-1", "effort": "max", "max_tokens": 32000}, "concurrency": 16},
